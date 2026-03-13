@@ -1,0 +1,24 @@
+--USE CASE OF PART EXTRACTION AS DATE AGGREGGATION
+--TASK:
+--HOW MANY ORDERS WERE PLACED EACH YEAR
+SELECT
+YEAR(OrderDate),
+COUNT(*) AS  no_of_orders
+FROM Sales.Orders
+GROUP BY YEAR(OrderDate)
+
+--HOW MANY ORDERS WERE PLACED EACH YEAR
+SELECT
+MONTH(OrderDate),
+COUNT(*) AS  no_of_orders
+FROM Sales.Orders
+GROUP BY MONTH(OrderDate)
+
+--OR
+
+SELECT
+DATENAME(month , OrderDate) AS order_date,
+COUNT(*) AS  no_of_orders
+FROM Sales.Orders
+GROUP BY DATENAME(month , OrderDate)
+
