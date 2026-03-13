@@ -1,0 +1,22 @@
+# Python 
+__pycache__/
+*.py[cod]
+*$py.class
+.venv/
+venv/
+ENV/
+
+# OS Metadata
+.DS_Store
+Thumbs.db
+
+# IDEs and Editors
+.vscode/
+.idea/
+
+# Database files (if you ever use local SQLite)
+*.sqlite3
+*.db
+
+# Environment variables (highly important for backend safety)
+.env
